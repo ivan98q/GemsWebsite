@@ -1,102 +1,79 @@
 <!DOCTYPE html>
 
-<html lang = en-US>
+<html lang=e n-US>
+
 <head>
-<meta charset="utf-8">
-   <!-- this links to the css im using -->
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <meta charset="utf-8">
+    <!-- this links to the css im using -->
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
-<!-- should make this mobile compatible courtesy of boostrap -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- should make this mobile compatible courtesy of boostrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- bootstrap cdn -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- font links -->
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
 
 </head>
+
 <body>
-<div class ="container-fluid">
 
-<nav class="navbar">
-    <div class = "row" id="navbar-id">
-    <ul>
-        <li><a href="index.html">Team ART</a></li>
-        <li><a href ="theproject.html">Our Project</a></li>
-        <li><a href="ourwork.html">Our Work</a></li>
-        <li><a href="theteam.html">The Team</a></li>
-        <li><a href="contactus.html">Contact Us</a></li>
+
+    <nav class="navbar">
+        <ul>
+            <li class="name"><a href="index.html"> Team ART</a></li>
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="theproject.html">Our Project</a></li>
+            <li><a href="ourwork.html">Our Work</a></li>
+            <li><a href="theteam.html">Meet the Team</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
         </ul>
+    </nav>
+
+
+
+    <title>Contatct Us</title>
+
+
+    <h1 style="font-family: 'Bree Serif', serif; font-size: 250%;">Contact Us</h1>
+    <h2 class="EmailLabel" style="font-family: 'Libre Franklin', sans-serif; font-size: 250%;"> Email</h2>
+
+    <img src="images/team3.jpg" alt="Team Picture" class="contactIMG">
+    <!-- still needs back end email sending  -->
+
+
+
+    <div id="contact">
+        <form method="post" name="contact_form" action="">
+
+
+            <div id="formName">Your Name: &nbsp;&nbsp;<input type="text" name="name" size="50" placeholder="Your name"></div>
+            <br/>
+            <div id="formEmail">Your Email: &nbsp;&nbsp;&nbsp;<input type="email" name="email" size="50" placeholder="Your email"></div>
+            <br/>
+            <div id="formMessage">Message: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea name="message" rows="10" cols="50" placeholder="Your message"></textarea></div>
+
+
+            <input type="submit">
+
+        </form>
     </div>
-</nav>
+
+    <footer>
+        <div class="footer">
+            <ul>
+                <li><a href="https://www.umd.edu/">University of Maryland</a></li>
+                <li><a href="http://www.honors.umd.edu">Honors College</a></li>
+                <li><a href="http://www.gemstone.umd.edu/">Gemstone</a></li>
+            </ul>
+        </div>
+    </footer>
 
 
-
-<title>Contatct Us</title>
-
-
-<h1>Contact Us</h1>
-
-<!-- still needs back end email sending  -->
-
-<!-- shamelessly taken from  https://bootsnipp.com/snippets/featured/simplest-contact-form  Thank you very much-->
-<div class="container">
-	<div class="row">
-      <div class="col-md-6 col-md-offset-3">
-          <form class="form-horizontal" action="" method="post">
-          <fieldset>
-
-
-            <!-- Name input-->
-            <div class="form-group">
-              <label class="col-md-3 control-label" for="name">Name</label>
-              <div class="col-md-9">
-                <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
-              </div>
-            </div>
-
-            <!-- Email input-->
-            <div class="form-group">
-              <label class="col-md-3 control-label" for="email">Your E-mail</label>
-              <div class="col-md-9">
-                <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
-              </div>
-            </div>
-
-            <!-- Message body -->
-            <div class="form-group">
-              <label class="col-md-3 control-label" for="message">Your message</label>
-              <div class="col-md-9">
-                <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
-              </div>
-            </div>
-
-            <!-- Form actions -->
-            <div class="form-group">
-              <div class="col-md-12 text-right">
-                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
-              </div>
-            </div>
-          </fieldset>
-          </form>
-      </div>
-	</div>
-
-
-
-
-
-
-
-
-<footer>
-    <div class="footer">
-    <ul>
-        <li><a href = "https://www.umd.edu/">University of Maryland</a></li>
-        <li><a href = "http://www.gemstone.umd.edu/">Gemstone</a></li>
-    </ul>
-    </div>
-</footer>
-</div>
-</div>
 </body>
+
 </html>

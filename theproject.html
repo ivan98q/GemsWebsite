@@ -1,61 +1,129 @@
 <!DOCTYPE html>
 
-<html lang = en-US>
+<html lang=e n-US>
+
 <head>
-<meta charset="utf-8">
+    <meta charset="utf-8">
 
-<!-- this links to the css im using -->
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <!-- this links to the css im using -->
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
-<!-- should make this mobile compatible courtesy of boostrap -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- should make this mobile compatible courtesy of boostrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- bootstrap cdn -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- font links -->
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+    
+    <style>
+        #panel1 {
+    position: absolute;
+    width: 70%;
+    left: 25%;
+}
+.logo {
+    position: absolute;
+    left: -350px;
+    top: -65px;
+}
+.panel1{
+    position: absolute;
+    left: 65px;
+    top: 30px;
+}
+
+#panel2 {
+    background-color: plum;
+    position: absolute;
+    top: 475px;
+    padding: 70px;
+}
+.panel2{
+    width: 65%;
+    padding-top: 25px;
+}
+.dyslexia {
+    width: 450px;
+    position: absolute;
+    left: 1050px;
+}
+
+#panel3 {
+    background-color: #D6D2D4;
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    top: 825px;
+    padding: 100px;
+}
+.dyslexia2 {
+    position: absolute;
+    left: 75px;
+    width: 450px;
+}
+.panel3{
+    position: absolute;
+    left: 600px;
+    top: 80px;
+    width: 55%;
+}
+    </style>
 
 </head>
+
 <body>
 
 
 
-<nav class="navbar">
-    <div class = "navbar-div" id="navbar-id">
-    <ul>
-        <!-- <li><a href="index.html">Team ART</a></li> -->
-        <li><a href ="theproject.html">Our Project</a></li>
-        <li><a href="ourwork.html">Our Work</a></li>
-        <li><a href="theteam.html">The Team</a></li>
-        <li><a href="contactus.html">Contact Us</a></li>
+    <nav class="navbar">
+        <ul>
+            <li class="name"><a href="index.html"> Team ART</a></li>
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="theproject.html">Our Project</a></li>
+            <li><a href="ourwork.html">Our Work</a></li>
+            <li><a href="theteam.html">Meet the Team</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
         </ul>
+    </nav>
+
+    <title>Our Project</title>
+
+
+    <h1 style="font-family: 'Bree Serif', serif; font-size: 250%;">Augmented Reality</h1>
+
+    <div id="panel1">
+        <img src="images/logo.jpg" class="logo" alt="Logo" width="350">
+        <p style="font-family: 'Libre Franklin', sans-serif; font-size: 125%;" class="panel1">
+            The Augmented Reality Aid project strives to help children overcome their learning disabilities, such as dyslexia, by providing them real time handwriting correction. Whether it be by correcting their spelling or incorrect characters, children will be able to get live feedback on their papers as they are being written. Currently, dyslexia is the leading learning disability and affects roughly 1 in 10 people worldwide. This project aims to help those people by utilizing the Microsoft HoloLens and other augmented reality technologies to provide on screen corrections as the user writes and makes mistakes.
+        </p>
     </div>
-</nav>
 
-<title>Our Project</title>
-<div class="container">
-<h1>Augmented Reality</h1>
 
-<p>
-	 Gemstone is an interdisciplinary, four year living and learning honors research program at the University of Maryland College Park. Under the guidance of our mentor <a href="http://cs.umd.edu/~zwicker/">Dr. Matthias Zwicker</a>, team ART aims to use augmented reality and machine learning to provide real time handwriting correction for people with dyslexia. Learning disabilities affect one in ten people worldwide and are especially detrimental to learning children. By hampering their ability to read and write, students with learning disabilities often fall behind their able counterparts. Once they do, a negative cycle is created making it difficult for them to catch up. team ART aims to prevent that from the start by helping these children overcome their learning disabilities. By correcting their mistakes as they happen, the assistive device we will build will prevent the formation of poor writing habits and facilitate their success in academic environments.
-</p>
-<p>
-    &nbsp;
-    Team ART is currently in the process of fundraising and developing application frameworks.
-</p>
-<p>
-    &nbsp;
-    <a href="https://www.facebook.com/UMDGemstoneTeamART/">Like our facebook page!</a>
-</p>
-
-<footer>
-    <div class="footer">
-    <ul>
-
-        <li><a href = "https://www.umd.edu/">University of Maryland</a></li>
-        <li><a href = "http://www.gemstone.umd.edu/">Gemstone</a></li>
-    </ul>
+    <div id="panel2">
+        <img src="images/dyslexia2.webp" class="dyslexia" alt="Logo">
+        <p style="font-family: 'Libre Franklin', sans-serif; font-size: 125%;" class="panel2">
+            This project takes advantage of the latest technology advancements in the field of augmented reality. By utilizing the different features of the Microsoft HoloLens, our team has been able to work towards creating a solution to the most common reading disability in the world. What we find most interesting about this project are the document manipulations capabilities. Through manipulating different aspects of the view, we can change the color of the page, bold key words, and provide suggested edits virtually without editing the physical document itself. These edits take advantage of the most innovative technology to help the general public with everydays task such as reading and writing.</p>
     </div>
-</footer>
-</div>
+    <div id="panel3">
+        <img src="images/dyslexia.jpg" class="dyslexia2" alt="Logo">
+        <p style="font-family: 'Libre Franklin', sans-serif; font-size: 125%;" class="panel3"> In our opinion, this project will improve the quality of life of children learning disabilities such as dyslexia. This project will not only helps these kids perform better when they are wearing the headset, but they will also able to perform better without it for they can learn from their mistakes faster when feedback is provided in real time. By providing real time handwriting correction for children with dyslexia, our team aims to help these kids overcome their learning disabilities so they can be more productive both inside the classroom and in the workforce. In addition, this project can be extended to help populations other than children such as people learning a new language.
+        </p>
+    </div>
+    <footer>
+        <div class="footer" id="bottomLinks">
+            <ul>
+
+                <li><a href="https://www.umd.edu/">University of Maryland</a></li>
+                <li><a href="http://www.honors.umd.edu">Honors College</a></li>
+                <li><a href="http://www.gemstone.umd.edu/">Gemstone</a></li>
+            </ul>
+        </div>
+    </footer>
+
 </body>
+
 </html>
